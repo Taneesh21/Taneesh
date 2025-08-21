@@ -7399,28 +7399,28 @@ p {
 .blog-author .author-footer .btn-connect:hover i {
   transform: translateX(5px);
 }
-/* #reatil Us Section */
+/* #retail Us Section */
 /*--------------------------------------------------------------
 
 
 /* Heading fade-in */
-/* .reatil_us {
+/* .retail_us {
   text-align: center;
   padding: 40px 20px;
 } */
-.reatil_us {
+.retail_us {
   margin-top: -10px;
   padding-top: 0;
    text-align: center;
   padding: 40px 20px;
 }
 
-.reatil_us .content {
+.retail_us .content {
   margin-top: 0;
   padding-top: 0;
 }
 
-.reatil_us h3 {
+.retail_us h3 {
   font-size: 2rem;
   color: #02172e;
   font-weight: 700;
@@ -7432,7 +7432,7 @@ p {
 }
 
 /* Paragraph fade-in */
-.reatil_us.content p {
+.retail_us.content p {
   font-size: 1.1rem;
   line-height: 1.8;
   color: #333;
