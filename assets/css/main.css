@@ -366,7 +366,7 @@ sir vo jo css hai to usme ye dal ke dekhiye media
 
   .navmenu a,
   .navmenu a:focus {
-    color:  color: #000 !important;
+    color: #000 !important;
     padding: 18px 15px;
     font-size: 16px;
     font-family: var(--nav-font);
