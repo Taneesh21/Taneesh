@@ -1328,7 +1328,7 @@ section,
   font-weight: 700;
   line-height: 1.8;
   color: #02172e;
-  text-align: justify;
+  text-align: left;
   padding: 0 30px;
   opacity: 0;
   animation: fadeIn 2s ease-in-out forwards;
