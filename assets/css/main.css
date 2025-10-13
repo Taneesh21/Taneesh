@@ -1089,6 +1089,14 @@ section,
   background: linear-gradient(135deg, color-mix(in srgb, var(--background-color), transparent 60%) 0%, color-mix(in srgb, var(--background-color), transparent 80%) 50%, color-mix(in srgb, var(--background-color), transparent 90%) 100%);
   z-index: 1;
 }
+/* Media Query For Video */
+@media (max-width: 768px) {
+  .travel-hero .hero-background video {
+    width: 100%;
+    height: 100%;         /* height auto, aspect ratio maintain */
+    object-fit: contain;  /* video pura dikhe, crop nahi hoga */
+  }
+}
 /* //image ke liye */
 /* Styling for the hero section */
 
@@ -10246,4 +10254,15 @@ h1 {
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+/* === Global Fix for Extra Horizontal Space === */
+html, body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;  /* extra scroll remove karega */
+}
+
+* {
+  box-sizing: border-box; /* width + padding issue fix */
 }
