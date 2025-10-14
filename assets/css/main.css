@@ -7456,7 +7456,7 @@ p {
   border-radius: 8px;
   margin-top: 20px;
 
-  animation: rotate 5s linear infinite; /* important line */
+  /* animation: rotate 5s linear infinite; important line */
 }
 
 @keyframes rotate {
