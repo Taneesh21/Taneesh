@@ -10269,3 +10269,26 @@ html, body {
 * {
   box-sizing: border-box; /* width + padding issue fix */
 }
+/* for whatsapp css */
+
+.whatsapp_float {
+  position: fixed;
+  width: 65px;
+  height: 65px;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+.whatsapp_float:hover {
+  transform: scale(1.1);
+  background-color: #20b358;
+}
+.whatsapp-icon {
+  width: 100%;
+  padding: 10px;
+}
