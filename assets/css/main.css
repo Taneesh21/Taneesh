@@ -1346,57 +1346,131 @@ section,
 }
 
 
+
 /* Paragraph fade-in */
+/* .details_us .content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  text-align: justify;
+  /* padding: 0 30px; */
+  /* padding: 0px;
+  justify-content: end;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-delay: 0.5s;
+} */ 
+ /* Desktop / Default */
 .details_us .content p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #333;
-  text-align: justify;
-  padding: 0 30px;
-  opacity: 0;
-  animation: fadeIn 2s ease-in-out forwards;
-  animation-delay: 0.5s;
-}
-/* List styling */
-.details_us .content ul {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #333;
-  text-align: justify;
-  padding: 0;  /* Remove extra padding */
-  margin-left: 20px;  /* Add left margin to bring text closer */
-  list-style-position: inside;  /* Bring dots closer to text */
-  opacity: 0;
-  animation: fadeIn 2s ease-in-out forwards;
-  animation-delay: 0.5s;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+    padding: 0px;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: 0.5s;
+    text-justify: inter-word;
 }
 
-/* List item styling */
-.details_us .content li {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #333;
-  text-align: justify;
-  padding: 0;  /* Remove extra padding */
-  opacity: 0;
-  animation: fadeIn 2s ease-in-out forwards;
-  animation-delay: 0.5s;
+/* Mobile Responsive (Max Width 576px) */
+@media only screen and (max-width: 576px) {
+    .details_us .content p {
+        text-align: left;     /* Justify problem fix */
+        font-size: 16px;      /* Better readability */
+        line-height: 1.6;     /* Tight & clean spacing */
+        word-spacing: normal; /* Extra space remove */
+    }
+
+    .details_us .content h1,
+    .details_us .content h2,
+    .details_us .content h3 {
+        text-align: center;
+        font-size: 20px;
+        margin: 15px 0;
+    }
 }
-/* Styling for the ordered list */
+/* Desktop / Default */
+.details_us .content p,
+.details_us .content ul,
+.details_us .content li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+    padding: 0px;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: 0.5s;
+    text-justify: inter-word;
+}
+
+/* Mobile Responsive */
+@media only screen and (max-width: 576px) {
+    .details_us .content p,
+    .details_us .content ul,
+    .details_us .content li {
+        text-align: left; /* 👈 Justify disable */
+        line-height: 1.6;
+        font-size: 14px;
+        word-spacing: normal; /* Extra spacing remove */
+    }
+
+    .details_us .content ul,
+    .details_us .content li {
+        margin-left: 15px; /* Bullet/text alignment Improved */
+        list-style-position: outside; /* Natural bullet alignment */
+    }
+
+    /* Mobile Headings */
+    .details_us .content h1,
+    .details_us .content h2,
+    .details_us .content h3 {
+        text-align: center;
+        font-size: 20px;
+        margin: 15px 0;
+    }
+}
+
+/* Ordered List Desktop (Problems class) */
 .Problems {
   font-size: 1.1rem;
   line-height: 1.8;
   color: #333;
-  padding-right: 50px;  /* Shift the content to the right */
-  margin-bottom: 20px; /* Space below the list */
-  list-style-position: inside;  /* Numbers will be inside, next to the text */
-  text-align: right;  /* Align text to the right */
+  padding-right: 50px;
+  margin-bottom: 20px;
+  list-style-position: inside;
+  text-align: justify; /* Desktop justify */
 }
 
-/* Adjust list item styling */
+/* Ordered list items */
 .Problems li {
-  margin-bottom: 15px; /* Space between list items */
+  margin-bottom: 15px;
 }
+
+/* Mobile Ordered List Fix */
+@media only screen and (max-width: 576px) {
+  .Problems {
+    padding-right: 0;
+    text-align: left; /*  Fix spacing */
+    list-style-position: outside;
+  }
+}
+@media only screen and (max-width: 576px) {
+    .details_us .content h1,
+    .details_us .content h2,
+    .details_us .content h3 {
+        text-align: center;
+        font-size: 20px; /* Smaller for better fit */
+        line-height: 1.3;
+        width: 100%;
+        padding: 0 10px; /* Add breathing space */
+        word-break: normal; /* Prevent breaking each word */
+        white-space: normal; /* Allow proper text wrapping */
+    }
+}
+
+
 
 
 /* Keyframes for fade-in */
