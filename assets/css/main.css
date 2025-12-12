@@ -673,7 +673,7 @@ sir vo jo css hai to usme ye dal ke dekhiye media
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
   font-size: 16px;
  color: #212529;
-  margin-right: 10px;
+ /* margin-right: 10px; Icon Position Changed css  */
   transition: 0.3s;
 }
 
