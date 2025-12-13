@@ -112,7 +112,8 @@
    
 <div class="form-container">
   <h1>Contact Us</h1>
- <form action="http://localhost/PunjabbullsWebsite/save_contact.php" method="POST" class="contact-form" onsubmit="return showMessage()">
+<!-- <form action="http://localhost/PunjabbullsWebsite/save_contact.php" method="POST" class="contact-form" onsubmit="return showMessage()"> -->
+  <form class="contact-form" onsubmit="return redirectToHome()">
   <div class="row">
     <div class="col-md-6">
       <input type="text" name="name" placeholder="Your Name" class="form-input" required>
@@ -129,10 +130,18 @@
 </form>
 </div>
 <script>
-function showMessage() {
-    alert("Thank you! Your form is being submitted.");
-    return true; //  return true form submit will be submit 
+// function showMessage() {
+//     alert("Thank you! Your form is being submitted.");
+//     return true; //  return true form submit will be submit 
+// }
+
+
+function redirectToHome() {
+    alert("Form submitted successfully!");
+    window.location.href = "https://www.punjabbulls.com/";
+    return false; // POST hone se roke
 }
+
 </script>
 
 </div>
